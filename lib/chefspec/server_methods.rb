@@ -12,7 +12,7 @@ module ChefSpec
     def server
       @server ||= ChefZero::Server.new(
         # Set the log level from RSpec, defaulting to warn
-        log_level:  RSpec.configuration.log_level || :warn,
+        log_level:  :debug,
 
         # Set a random port so ChefSpec may be run in multiple contexts
         port: port,
